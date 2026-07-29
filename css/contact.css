@@ -1,0 +1,175 @@
+﻿.page-hero-contact{
+    background:
+        linear-gradient(90deg, #eef4ef 0%, rgba(238,244,239,.92) 54%, rgba(238,244,239,.25) 100%),
+        url("../assets/head.png") right center / cover no-repeat;
+}
+.contact-layout{
+    display: grid;
+    gap: 34px;
+}
+.contact-card{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #ffffff;
+    border: 1px solid #e7ece8;
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 12px 35px rgba(0,0,0,.06);
+}
+.contact-card .strip-icon{
+    position: relative;
+    flex: 0 0 42px;
+}
+.contact-card h3{
+    color: #173426;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.contact-card p{
+    color: #555;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.message-form{
+    display: grid;
+    gap: 14px;
+}
+.message-form input,
+.message-form textarea{
+    width: 100%;
+    border: 1px solid #e0e6e2;
+    border-radius: 8px;
+    padding: 15px;
+    font: inherit;
+    color: #173426;
+    background: #ffffff;
+}
+.message-form textarea{
+    min-height: 150px;
+    resize: vertical;
+}
+.message-form button{
+    justify-self: start;
+    border: 0;
+    border-radius: 6px;
+    background: #4f7156;
+    color: white;
+    font-weight: 700;
+    padding: 14px 22px;
+    cursor: pointer;
+}
+.map-box{
+    min-height: 260px;
+    border: 1px solid #dce5df;
+    border-radius: 8px;
+    background:
+        linear-gradient(90deg, rgba(79,113,86,.1) 1px, transparent 1px),
+        linear-gradient(rgba(79,113,86,.1) 1px, transparent 1px),
+        #f9fbfa;
+    background-size: 42px 42px;
+    position: relative;
+    overflow: hidden;
+}
+.map-box::before,
+.map-box::after{
+    content: "";
+    position: absolute;
+    background: rgba(210,178,82,.24);
+    border-radius: 999px;
+}
+.map-box::before{
+    width: 120%;
+    height: 26px;
+    left: -10%;
+    top: 40%;
+    transform: rotate(-8deg);
+}
+.map-box::after{
+    width: 28px;
+    height: 120%;
+    left: 22%;
+    top: -10%;
+    transform: rotate(12deg);
+}
+.map-pin{
+    width: 28px;
+    height: 28px;
+    border-radius: 50% 50% 50% 4px;
+    background: #4f7156;
+    position: absolute;
+    left: 42%;
+    top: 42%;
+    transform: rotate(-45deg);
+    z-index: 2;
+}
+.map-pin::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    left: 9px;
+    top: 9px;
+}
+.map-label{
+    position: absolute;
+    left: 50%;
+    top: 39%;
+    z-index: 2;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 14px;
+    width: min(260px, 42vw);
+    box-shadow: 0 12px 35px rgba(0,0,0,.1);
+}
+.map-label h3{
+    color: #173426;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.map-label p{
+    color: #555;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.contact-card:nth-child(1) .strip-icon::before{
+    width: 17px;
+    height: 17px;
+    border: 2px solid #4f7156;
+    border-radius: 50%;
+    left: 10px;
+    top: 9px;
+}
+.contact-card:nth-child(2) .strip-icon::before{
+    width: 22px;
+    height: 16px;
+    border: 2px solid #4f7156;
+    border-radius: 3px;
+    left: 8px;
+    top: 11px;
+}
+.contact-card:nth-child(3) .strip-icon::before{
+    width: 22px;
+    height: 22px;
+    border: 2px solid #4f7156;
+    border-radius: 50%;
+    left: 8px;
+    top: 8px;
+}
+.contact-card:nth-child(4) .strip-icon::before{
+    width: 18px;
+    height: 24px;
+    border: 2px solid #4f7156;
+    border-radius: 14px 14px 14px 2px;
+    left: 10px;
+    top: 7px;
+    transform: rotate(-45deg);
+}
+@media (min-width: 768px){
+    .contact-layout{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
