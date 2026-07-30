@@ -1,7 +1,7 @@
 ﻿.page-hero-contact{
     background:
         linear-gradient(90deg, #eef4ef 0%, rgba(238,244,239,.92) 54%, rgba(238,244,239,.25) 100%),
-        url("../assets/head.png") right center / cover no-repeat;
+        url("../assets/customer.jpg") right center / cover no-repeat;
 }
 .contact-layout{
     display: grid;
@@ -134,38 +134,11 @@
     font-size: 12px;
     line-height: 1.5;
 }
-.contact-card:nth-child(1) .strip-icon::before{
-    width: 17px;
-    height: 17px;
-    border: 2px solid #4f7156;
-    border-radius: 50%;
-    left: 10px;
-    top: 9px;
-}
-.contact-card:nth-child(2) .strip-icon::before{
-    width: 22px;
-    height: 16px;
-    border: 2px solid #4f7156;
-    border-radius: 3px;
-    left: 8px;
-    top: 11px;
-}
-.contact-card:nth-child(3) .strip-icon::before{
-    width: 22px;
-    height: 22px;
-    border: 2px solid #4f7156;
-    border-radius: 50%;
-    left: 8px;
-    top: 8px;
-}
+.contact-card:nth-child(1) .strip-icon::before,
+.contact-card:nth-child(2) .strip-icon::before,
+.contact-card:nth-child(3) .strip-icon::before,
 .contact-card:nth-child(4) .strip-icon::before{
-    width: 18px;
-    height: 24px;
-    border: 2px solid #4f7156;
-    border-radius: 14px 14px 14px 2px;
-    left: 10px;
-    top: 7px;
-    transform: rotate(-45deg);
+    content: none;
 }
 @media (min-width: 768px){
     .contact-layout{
